@@ -1,0 +1,241 @@
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+
+/* --- 1360px (Small Desktop) --- */
+@media (max-width: 1360px) {
+  .header {
+    padding: 2rem 100px;
+  }
+  .container {
+    padding-bottom: 250px;
+  }
+  .experience-section,
+  .case-study-section,
+  .testimonial-section,
+  .pricing-section,
+  .contact-section,
+  .footer {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .clients-card {
+    width: 80%;
+  }
+}
+
+/* --- 1024px (Tablet Landscape) --- */
+@media (max-width: 1024px) {
+  .header {
+    padding: 2rem 60px;
+  }
+  .experience-section,
+  .case-study-section,
+  .testimonial-section,
+  .pricing-section,
+  .contact-section,
+  .footer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .clients-card {
+    width: 90%;
+  }
+  .experience-content {
+    gap: 2rem;
+  }
+  .experience-left h2 {
+    font-size: 3rem;
+  }
+  .pricing-cards {
+    gap: 1rem;
+  }
+  .pricing-card {
+    padding: 2rem 1.5rem;
+  }
+  .contact-container {
+    gap: 3rem;
+  }
+}
+
+/* --- 980px (Tablet Portrait) --- */
+@media (max-width: 980px) {
+  .container {
+    padding: 0;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 40px;
+    position: relative;
+  }
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-100);
+    padding: 2rem;
+    gap: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+  .nav.show-menu {
+    display: flex;
+  }
+  .btn-contact-desktop {
+    display: none;
+  }
+  .hero-content .name {
+    font-size: 4rem;
+  }
+  .experience-section,
+  .case-study-section,
+  .testimonial-section,
+  .pricing-section,
+  .contact-section,
+  .footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .experience-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .experience-left,
+  .experience-right {
+    width: 100%;
+  }
+  .experience-right h3 {
+    font-size: 1.5rem;
+  }
+  .case-study-card {
+    flex-direction: column;
+  }
+  .card-images {
+    padding: 2rem 0 0 0;
+  }
+  .mockup-img {
+    width: 100%;
+    max-width: 500px;
+    transform: none;
+  }
+  .case-study-card:hover .mockup-img {
+    transform: scale(1.02);
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-left h2 {
+    font-size: 2.8rem;
+  }
+}
+
+/* --- 768px (Mobile) --- */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 20px;
+  }
+  .hero-content .name {
+    font-size: 3rem;
+  }
+  .hero-content .description {
+    font-size: 1rem;
+  }
+  .clients-card {
+    width: 95%;
+    padding: 1.5rem 1rem;
+    margin-bottom: 120px;
+  }
+  .client-logos {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .client-logos svg {
+    max-width: 60px;
+    height: auto;
+  }
+  .quote-text {
+    text-align: justify;
+  }
+  .contact-left {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact-left h2 {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+  .contact-right {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .experience-section,
+  .case-study-section,
+  .testimonial-section,
+  .pricing-section,
+  .contact-section,
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .case-study-container h2 {
+    font-size: 2.2rem;
+  }
+  .card-content {
+    padding: 2rem;
+  }
+  .card-content h3 {
+    font-size: 1.5rem;
+  }
+  .pricing-cards {
+    flex-direction: column;
+  }
+  .pricing-card.highlighted {
+    transform: none;
+  }
+  .social-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .info-card {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  .info-divider {
+    width: 60px;
+    height: 1px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-section {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .pricing-section {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .experience-section {
+    padding-top: 40px;
+  }
+}
