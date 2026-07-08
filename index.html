@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eleanor Scott - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Bao bọc toàn bộ phần Hero ban đầu vào 1 section -->
+    <section class="hero-section">
+        <!-- Nền gợn sóng nhiều lớp bằng SVG -->
+        <div class="bg-waves">
+            <svg viewBox="0 0 1440 800" preserveAspectRatio="none">
+                <!-- Nền base sáng nhất (trong dải tối) -->
+                <path fill="var(--bg-500)" d="M0,0 L1440,0 L1440,800 L0,800 Z" />
+
+                <!-- Lớp sóng 1 -->
+                <path fill="var(--bg-400)"
+                    d="M0,200 C300,300 600,100 900,150 C1200,200 1440,100 1440,100 L1440,800 L0,800 Z" />
+
+                <!-- Lớp sóng 2 -->
+                <path fill="var(--bg-300)"
+                    d="M0,350 C300,200 600,400 900,350 C1200,300 1440,400 1440,400 L1440,800 L0,800 Z" />
+
+                <!-- Lớp sóng 3 -->
+                <path fill="var(--bg-200)"
+                    d="M0,500 C400,600 700,350 1000,450 C1250,550 1440,450 1440,450 L1440,800 L0,800 Z" />
+
+                <!-- Lớp sóng tối nhất ở dưới cùng -->
+                <path fill="var(--bg-100)"
+                    d="M0,650 C350,550 650,750 950,650 C1250,550 1440,650 1440,650 L1440,800 L0,800 Z" />
+
+                <!-- Khúc viền trắng uốn lượn dưới cùng đã được tách ra -->
+            </svg>
+        </div>
+
+        <!-- Lớp viền trắng ở dưới cùng -->
+        <div class="bottom-wave">
+            <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#ffffff"
+                    d="M0,200 C350,300 650,100 950,250 C1250,350 1440,200 1440,200 L1440,320 L0,320 Z" />
+            </svg>
+        </div>
+        <div class="container">
+            <header class="header">
+                <div class="logo">E</div>
+                <nav class="nav">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Works</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <a href="mailto:Eleanor@Info.Com" class="btn btn-primary">
+                    <i class="fa-solid fa-envelope"></i> Eleanor@Info.Com
+                </a>
+            </header>
+
+            <main class="hero">
+                <div class="hero-content">
+                    <div class="profile-img">
+                        <img src="./image/avatar.png" alt="Eleanor Scott" />
+                    </div>
+
+                    <div class="location">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.375 18.125H15.625" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M10 10.625C11.3807 10.625 12.5 9.50571 12.5 8.125C12.5 6.74429 11.3807 5.625 10 5.625C8.61929 5.625 7.5 6.74429 7.5 8.125C7.5 9.50571 8.61929 10.625 10 10.625Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M16.25 8.125C16.25 13.75 10 18.125 10 18.125C10 18.125 3.75 13.75 3.75 8.125C3.75 6.4674 4.40848 4.87769 5.58058 3.70558C6.75269 2.53348 8.3424 1.875 10 1.875C11.6576 1.875 13.2473 2.53348 14.4194 3.70558C15.5915 4.87769 16.25 6.4674 16.25 8.125V8.125Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        KYIV - 03148, UKRAINE
+                    </div>
+
+                    <h1 class="name">Eleanor Scott</h1>
+
+                    <p class="description">
+                        Mauris dui ex, venenatis id bibendum interdum, ornare non est.
+                        Pellentesque vitae mauris et metus pretium consectetur.
+                    </p>
+
+                    <a href="#" class="btn btn-outline">
+                        <i class="fa-solid fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </main>
+
+            <div class="clients-card">
+                <p>MY CLIENTS OVER THE WORLD</p>
+                <div class="client-logos">
+                    <svg width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 21.6423C0.0479578 21.3689 0.100086 21.0963 0.144569 20.8208C0.494869 18.629 1.55828 16.8448 3.21943 15.3958C4.58658 14.205 6.11011 13.2388 7.64267 12.2851C9.72641 10.9871 11.749 9.59938 13.6791 8.08089C13.7653 8.01342 13.8313 7.86525 13.832 7.75465C13.8424 6.4191 13.839 5.08285 13.839 3.7473V3.43845H18.805V3.72156C18.805 9.25993 18.8127 14.799 18.8009 20.3374C18.7967 22.4596 18.4526 24.5228 17.4462 26.4211C16.0937 28.9726 14.0176 30.5481 11.1332 30.9842C9.07446 31.2959 7.03243 31.2047 5.11272 30.3672C2.14559 29.0734 0.445521 26.7779 0.0590785 23.5392C0.051433 23.4759 0.0201562 23.414 0 23.3521V21.6423ZM13.839 14.0324C12.7074 15.0056 11.4876 15.7304 10.2456 16.4281C8.84926 17.212 7.512 18.0829 6.2936 19.134C4.8639 20.3673 4.28076 23.4029 6.15459 25.0542C7.82686 26.5275 11.3639 26.9045 13.0126 23.9524C13.5853 22.9285 13.8084 21.8016 13.823 20.6434C13.8508 18.5065 13.8355 16.3697 13.8383 14.2335L13.839 14.0324Z"
+                            fill="#1562E7" />
+                        <path
+                            d="M41.4906 38.6366C41.4823 38.5399 41.4677 38.4432 41.4677 38.3472C41.4663 32.7191 41.4586 27.0917 41.4711 21.4643C41.4753 19.326 41.8166 17.2476 42.7848 15.3131C43.9969 12.8938 45.943 11.415 48.5918 10.9051C50.5387 10.5308 52.4841 10.5865 54.3885 11.1854C57.5419 12.1766 59.83 15.0203 60.1372 18.2917C60.4743 21.8872 59.1606 24.7538 56.3436 26.9693C55.0258 28.005 53.5975 28.8697 52.1637 29.7294C50.1932 30.9112 48.3444 32.2656 46.5783 33.7368C46.4136 33.8731 46.3434 34.0108 46.3455 34.2293C46.3552 35.6991 46.3503 37.1675 46.3503 38.6366H41.4906ZM46.3496 27.8596C46.4456 27.7776 46.497 27.7296 46.5519 27.6864C47.1149 27.2378 47.6459 26.7397 48.2485 26.3544C49.2646 25.7054 50.342 25.151 51.3658 24.5131C52.3228 23.917 53.2723 23.2979 54.0695 22.4861C55.6966 20.8306 55.641 18.2673 53.993 16.698C52.3319 15.1155 48.4744 14.861 46.9932 18.1783C46.5658 19.1354 46.3879 20.151 46.3656 21.1874C46.335 22.6378 46.3524 24.0895 46.3503 25.5405C46.3489 26.2959 46.3496 27.0507 46.3496 27.8596Z"
+                            fill="#1562E7" />
+                        <path
+                            d="M79.2965 26.2381C79.225 26.5456 79.1673 26.8572 79.0783 27.1605C78.6091 28.7541 77.6973 29.9965 76.1772 30.7331C75.4571 31.0823 74.694 31.2646 73.8877 31.2639C70.0087 31.2604 66.1283 31.2618 62.2493 31.2618H61.9101V26.3453H62.2083C66.0345 26.3453 69.8614 26.346 73.6869 26.3453C74.1449 26.3453 74.3103 26.1748 74.3896 25.7269C74.5494 24.8261 73.9711 24.1673 73.1753 23.7799C72.556 23.4787 71.8867 23.3834 71.2063 23.3792C69.68 23.3709 68.1696 23.2457 66.7114 22.7588C65.0218 22.1953 63.5845 21.2688 62.61 19.7371C61.9574 18.7111 61.7641 17.5529 61.8211 16.3613C61.9407 13.8405 63.3162 12.194 65.5486 11.202C66.2534 10.8883 67.0277 10.8383 67.7978 10.8383C71.1882 10.8403 74.5779 10.8389 77.9683 10.8396C78.0114 10.8396 78.0552 10.8445 78.1143 10.848V15.7109H77.8057C74.5042 15.7109 71.2028 15.7109 67.902 15.7102C67.5406 15.7102 67.1875 15.7186 66.9575 16.0719C66.6211 16.5881 66.7844 17.2691 67.3432 17.6231C67.9493 18.0057 68.627 18.2033 69.329 18.268C70.2742 18.3563 71.2278 18.3542 72.1738 18.4419C74.2631 18.6373 76.1376 19.335 77.5847 20.9286C78.4861 21.9192 79.0401 23.0892 79.2409 24.4192C79.2493 24.4755 79.2785 24.5284 79.2972 24.5819L79.2965 26.2381Z"
+                            fill="#1562E7" />
+                        <path
+                            d="M36.8448 3.31185C36.9908 3.36263 37.1402 3.40576 37.2813 3.46628C39.1524 4.269 39.4526 6.08591 38.3579 7.36373C37.624 8.22071 36.3701 8.45582 35.3957 7.93899C34.392 7.40824 33.82 6.22225 34.13 5.16911C34.3906 4.28569 35.021 3.71669 35.8891 3.4155C35.9934 3.37933 36.0984 3.34594 36.2033 3.31116L36.8448 3.31185Z"
+                            fill="#1562E7" />
+                        <path
+                            d="M26.1027 31.2514H21.2069V30.9571C21.2069 27.573 21.1811 24.1896 21.2138 20.8056C21.2493 17.1961 22.7568 14.3539 25.8094 12.3916C27.0855 11.5715 28.5305 11.1861 30.0165 10.9579C30.4968 10.8849 30.9854 10.8612 31.4935 10.8126V15.5844C30.6921 15.6164 29.9282 15.7965 29.1977 16.1151C27.1328 17.0145 26.1111 18.6012 26.1048 20.8424C26.0972 24.2091 26.1027 27.5744 26.1027 30.9411V31.2514Z"
+                            fill="#1562E7" />
+                        <path d="M38.9682 10.8598H34.0772V31.2541H38.9682V10.8598Z" fill="#1562E7" />
+                    </svg>
+                    <svg width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M69.6114 15.5191C71.6201 13.4841 73.8459 14.0827 73.8459 16.0564C73.8459 17.9828 71.5651 20.0623 68.8145 21.6741C68.5479 21.8272 68.2319 22.0054 67.9131 22.1641C67.806 21.6797 67.7455 21.1424 67.7455 20.5439C67.7455 18.8987 68.4352 16.7106 69.6114 15.5191ZM58.8973 36.292C56.229 38.9951 52.8189 35.5487 56.7979 31.5177C57.6992 30.6046 59.1775 29.5997 60.7164 28.6838C61.593 30.8886 60.8977 34.257 58.8973 36.292ZM41.9014 25.4685C39.8542 25.4685 38.5298 22.9825 38.9392 19.912C39.3404 16.8414 41.3271 14.3555 43.3716 14.3555C45.2649 14.3555 46.5399 16.4907 46.3943 19.2466C46.3421 19.6447 46.2953 20.0289 46.2569 20.3991C45.7183 23.2359 43.8332 25.4685 41.9014 25.4685ZM14.8785 24.4468C14.2108 25.1233 13.3946 25.4824 12.5675 25.4824C11.7954 25.4824 11.1276 25.1289 10.5753 24.5693C8.68197 22.6513 8.84685 17.9438 11.2787 15.4718C11.9685 14.773 12.8011 14.3666 13.6584 14.3666C14.4251 14.3666 15.0983 14.7118 15.6507 15.2713C17.4341 17.078 17.5385 21.7521 14.8785 24.4468ZM78.2261 25.4518C78.2261 25.4518 77.4676 24.3772 77.234 24.071C77.0747 23.8706 76.8768 23.6256 76.3547 23.9875C75.2033 24.7697 73.9063 25.4852 72.3071 25.4852C71.087 25.4852 70.018 25.1706 69.2239 24.4886C69.5564 24.3355 69.9054 24.1657 70.2626 23.9736C72.1504 22.938 73.725 21.624 74.4834 20.8557C78.1573 17.1337 77.006 11.5828 72.5296 11.5828C68.3006 11.5828 64.9591 15.7585 64.9591 20.3964C64.9591 21.0951 65.0416 22.0917 65.3384 23.1523C65.0883 23.2748 63.4148 24.0961 61.4061 25.2179C59.5183 23.7815 56.5725 24.4273 56.5725 24.4273C59.3067 20.4966 63.4231 14.3555 63.7721 13.8488C64.0221 13.4869 63.9836 13.1278 63.7418 12.5599C63.4313 11.8779 63.1208 11.7526 62.6949 11.7526H54.1489C53.8686 11.7526 53.6488 11.8834 53.5663 12.2064C53.4894 12.5209 53.308 13.6178 53.2778 13.9936C53.2393 14.3694 53.5883 14.6004 53.951 14.6004H60.1421L54.5418 22.7153C54.5033 22.7459 54.4649 22.7849 54.4347 22.8378C53.624 24.0265 52.3737 25.694 50.8734 25.694C49.9418 25.694 48.7905 25.0175 48.7905 22.8071C48.7905 20.6413 49.6533 16.0675 50.2826 12.5042C50.3513 12.1201 50.2221 11.7442 49.6148 11.7442H48.1007C47.7517 11.7442 47.5539 11.9586 47.5017 12.2593C47.411 12.8049 47.3203 13.3422 47.2296 13.8572C46.4795 12.4068 45.2814 11.5856 43.5474 11.5856C41.9399 11.5856 40.3736 12.1924 39.0931 13.4814C35.8945 16.7217 36.5018 22.0026 33.7429 24.7976C32.5531 26.003 31.2038 25.6355 31.2038 23.2637C31.2038 20.555 32.2261 17.5374 33.4022 14.6728C33.6055 14.1662 33.3857 13.743 33.1686 13.4145C32.8581 12.9552 32.7372 12.7074 32.1766 12.7074C31.3055 12.7074 29.9123 13.267 27.1232 13.267C26.5324 13.267 25.9636 13.2447 25.4552 13.2058C25.4854 12.7826 25.4937 12.4987 25.5019 12.3929C25.5184 11.9948 25.381 11.7415 24.9633 11.7415H23.5399C23.0233 11.7415 22.8969 11.9864 22.8365 12.3929C22.5946 14.1188 22.133 20.4604 18.9949 23.6395C18.6321 24.007 18.4123 24.1239 18.4123 24.1239C19.1927 22.5733 19.6159 20.5383 19.6159 18.9265C19.6159 14.3889 16.9642 11.58 13.6365 11.58C12.6197 11.58 11.5453 11.9113 10.5368 12.546C11.0067 9.78165 11.4381 7.19548 11.5893 6.32136C11.7184 5.58365 11.4519 5.19948 11.2623 4.89326C10.9408 4.38939 10.6577 4.16669 10.2345 4.16669H5.32403C5.04374 4.16669 4.83215 4.36712 4.76345 4.68169C4.68102 5.04916 4.50515 6.01793 4.48317 6.46334C4.46668 6.85586 4.73323 7.00062 5.04374 7.00062H8.63526C8.0582 10.5695 6.96728 17.4873 6.63478 19.2216C6.21985 21.4319 4.66453 24.1406 2.05127 25.101C1.72427 25.2235 1.58962 25.5242 1.71053 25.8777C1.83143 26.2313 2.27934 27.1527 2.41399 27.3893C2.55139 27.6343 2.85366 27.7958 3.14219 27.6955C4.49965 27.2112 5.74171 26.4289 6.72546 25.4379C6.96728 25.1929 7.2036 24.9145 7.42893 24.6166C8.60228 27.2891 10.9902 28.2634 13.4386 28.2634C16.203 28.2634 19.19 27.2891 21.2811 25.1623C23.7295 22.6902 24.7517 18.5924 25.1832 15.6889C25.7905 15.7724 26.4802 15.842 27.1369 15.842C28.8186 15.842 30.2283 15.4801 30.2283 15.4801C30.2283 15.4801 28.5329 20.04 28.5329 23.4029C28.5329 27.1945 30.3218 28.269 32.3057 28.269C34.3447 28.269 35.7764 26.7184 36.7986 24.8004C37.0651 25.3989 37.4581 26.1143 37.9967 26.6572C38.92 27.5925 40.0658 28.269 41.7173 28.269C43.6051 28.269 45.2264 27.1638 46.3778 25.4685C46.5811 26.1811 46.8999 26.7824 47.3313 27.2195C47.9139 27.8097 48.9828 28.2718 50.3238 28.2718C52.6265 28.2718 53.962 26.5208 57.5453 26.5208C57.9987 26.5208 58.4081 26.5904 58.7791 26.7212C57.1358 27.7345 55.575 28.8258 54.6188 29.7918C51.6648 32.7844 51.5274 36.7235 53.4674 38.6888C55.8169 41.069 59.1666 39.8775 61.2577 37.759C63.7061 35.2787 64.4178 30.5907 62.9999 27.381C64.7118 26.4679 66.1435 25.7914 66.4842 25.6299C67.5532 27.1109 69.3256 28.2718 72.2493 28.2718C74.3405 28.2718 76.4481 27.5202 78.0914 26.2619C78.3552 26.0837 78.4074 25.7135 78.2261 25.4518Z"
+                            fill="#212123" />
+                    </svg>
+                    <svg width="81" height="40" viewBox="0 0 81 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M71.8702 11.1714C66.8696 11.1714 62.8005 15.2628 62.8005 20.2925C62.8005 25.3222 66.8696 29.4135 71.8702 29.4135C76.8695 29.4135 80.9375 25.3222 80.9375 20.2925C80.9375 15.2628 76.8695 11.1714 71.8702 11.1714ZM71.8702 25.0908C69.2403 25.0908 67.0984 22.9359 67.0984 20.2925C67.0984 17.6479 69.2403 15.4942 71.8702 15.4942C74.4977 15.4942 76.6408 17.6479 76.6408 20.2925C76.6408 22.9371 74.4989 25.0908 71.869 25.0908H71.8702ZM45.1631 18.4453L43.5772 17.6491C42.8887 17.3062 42.457 17.0408 42.2834 16.8446C42.1179 16.6709 42.0237 16.4412 42.0195 16.2011C42.0195 15.8934 42.1579 15.6339 42.43 15.4319C42.6998 15.2205 43.0834 15.1242 43.5702 15.1242C44.4605 15.1242 45.447 15.6621 46.5332 16.746L49.21 14.0533C48.5523 13.1566 47.6921 12.4283 46.6998 11.9277C45.7204 11.4344 44.6384 11.1801 43.542 11.1855C41.908 11.1855 40.5591 11.6682 39.5081 12.6405C38.4582 13.6129 37.9304 14.7813 37.9304 16.1518C37.9304 18.2773 39.3204 20.0482 42.1098 21.4539L43.5702 22.1879C44.8288 22.8255 45.4552 23.4749 45.4552 24.1467C45.4552 24.5107 45.2804 24.8254 44.9332 25.1049C44.586 25.3856 44.1262 25.5183 43.5561 25.5183C43.0283 25.5183 42.423 25.3363 41.7415 24.9663C41.0624 24.6024 40.4582 24.1131 39.9608 23.5243L37.2981 26.4413C38.7996 28.4142 40.8019 29.4077 43.3192 29.4077C45.2112 29.4077 46.7209 28.8898 47.8399 27.8611C48.966 26.8335 49.5291 25.5465 49.5291 24.0069C49.5291 22.8525 49.217 21.8391 48.5977 20.9783C47.9725 20.1175 46.8253 19.279 45.1631 18.4464V18.4453ZM18.2356 27.4266V11.5343H13.9306V12.5983C12.4801 11.6648 10.7917 11.1695 9.06735 11.1714C4.06799 11.1714 0 15.2628 0 20.2925C0 25.3222 4.06799 29.4135 9.06852 29.4135C10.7722 29.4161 12.4414 28.9335 13.8814 28.022C13.8814 28.1617 13.8743 28.2874 13.8743 28.3719C13.8743 31.0153 11.7324 33.1702 9.10371 33.1702C8.2099 33.1682 7.33485 32.9134 6.5794 32.4351L4.45039 36.1848C5.85426 37.0421 7.46631 37.497 9.11075 37.5C14.1113 37.5 18.2356 33.4075 18.2356 28.3778C18.2356 28.1828 18.2485 27.6086 18.2356 27.4266ZM9.06852 25.0896C6.44098 25.0896 4.2979 22.9359 4.2979 20.2925C4.2979 17.6479 6.43981 15.4942 9.06852 15.4942C11.6972 15.4942 13.8391 17.6479 13.8391 20.2925C13.8391 22.9359 11.6972 25.0908 9.06852 25.0908V25.0896ZM35.3838 11.5284H31.0577V20.1997C31.0648 21.4316 31.0648 23.5583 30.1615 24.4672C29.7299 24.9006 29.2571 25.2928 28.2624 25.2928C27.2607 25.2928 26.788 24.9006 26.3575 24.4672C25.4531 23.5571 25.4601 21.4245 25.466 20.1997V11.5284H21.1411V20.1739C21.127 21.9565 21.1059 25.2658 23.276 27.4618C24.5487 28.7489 26.0654 29.4065 28.2554 29.4065C30.4466 29.4065 31.9621 28.7559 33.2348 27.4618C35.4049 25.2658 35.3838 21.9495 35.3697 20.1739L35.3838 11.5273V11.5284ZM59.8984 24.3146C59.5512 24.58 58.709 25.1683 57.7565 25.0356C56.9777 24.9299 56.3454 24.3569 56.248 22.4403V15.2499H61.3319V11.5143H56.248V6.66669H51.9361V7.6179H51.929V21.8743C51.929 24.1408 52.4991 29.4065 57.7495 29.4065C60.4064 29.3654 62.0192 27.9174 62.6949 27.3514L62.7852 27.281L60.1976 24.0774C60.1905 24.0832 60.0099 24.23 59.8984 24.3146Z"
+                            fill="#F45D48" />
+                    </svg>
+                    <svg width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M72.7549 21.5141C72.7549 16.8145 70.4785 13.1062 66.1277 13.1062C61.7586 13.1062 59.115 16.8145 59.115 21.4774C59.115 27.0031 62.2359 29.7935 66.7152 29.7935C68.8997 29.7935 70.5519 29.2978 71.8003 28.6002V24.9286C70.5519 25.5528 69.12 25.9383 67.3026 25.9383C65.5219 25.9383 63.9431 25.3142 63.7412 23.1479H72.7182C72.7182 22.9093 72.7549 21.9547 72.7549 21.5141ZM63.6861 19.7701C63.6861 17.6957 64.9528 16.8329 66.1093 16.8329C67.2292 16.8329 68.4224 17.6957 68.4224 19.7701H63.6861Z"
+                            fill="#635BFF" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M52.0288 13.1062C50.2297 13.1062 49.0732 13.9507 48.4307 14.5381L48.192 13.3999H44.1533V34.8051L48.7428 33.8322L48.7611 28.6369C49.422 29.1142 50.395 29.7934 52.0104 29.7934C55.2965 29.7934 58.2888 27.1499 58.2888 21.3305C58.2704 16.0067 55.2414 13.1062 52.0288 13.1062ZM50.9273 25.7547C49.8442 25.7547 49.2017 25.3692 48.7611 24.8919L48.7428 18.0812C49.2201 17.5488 49.8809 17.1816 50.9273 17.1816C52.5979 17.1816 53.7544 19.0541 53.7544 21.459C53.7544 23.9189 52.6162 25.7547 50.9273 25.7547Z"
+                            fill="#635BFF" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M37.8381 12.0231L42.4459 11.0317V7.30511L37.8381 8.27808V12.0231Z" fill="#635BFF" />
+                        <path d="M42.4459 13.4183H37.8381V29.4813H42.4459V13.4183Z" fill="#635BFF" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M32.8997 14.7767L32.606 13.4183H28.6407V29.4813H33.2301V18.5952C34.3132 17.1816 36.149 17.4386 36.7181 17.6406V13.4183C36.1307 13.198 33.9828 12.7941 32.8997 14.7767Z"
+                            fill="#635BFF" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M23.7209 9.4346L19.2416 10.3892L19.2233 25.0938C19.2233 27.8107 21.261 29.8117 23.978 29.8117C25.4833 29.8117 26.5848 29.5364 27.1906 29.2059V25.4793C26.6031 25.718 23.7026 26.5624 23.7026 23.8455V17.3284H27.1906V13.4182H23.7026L23.7209 9.4346Z"
+                            fill="#635BFF" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.3113 18.0812C11.3113 17.3652 11.8987 17.0899 12.8717 17.0899C14.2669 17.0899 16.0292 17.5121 17.4244 18.2648V13.9507C15.9007 13.3449 14.3954 13.1062 12.8717 13.1062C9.14505 13.1062 6.66675 15.0522 6.66675 18.3015C6.66675 23.3682 13.6427 22.5605 13.6427 24.7451C13.6427 25.5895 12.9084 25.8649 11.8804 25.8649C10.3567 25.8649 8.41074 25.2407 6.86868 24.3963V28.7654C8.57596 29.4997 10.3016 29.8118 11.8804 29.8118C15.6988 29.8118 18.3239 27.921 18.3239 24.6349C18.3056 19.1643 11.3113 20.1373 11.3113 18.0812Z"
+                            fill="#635BFF" />
+                    </svg>
+                </div>
+            </div>
+    </section>
+
+    <!-- Phẩn 27+ Years of Experience -->
+    <section class="experience-section">
+        <div class="experience-content">
+            <div class="experience-left">
+                <h2>27+ Years of<br>Experience</h2>
+            </div>
+            <div class="experience-right">
+                <h3>Hey, I'm Eleanor Scott Senior Product Designer at <span class="highlight">Google.</span></h3>
+                <p>
+                    Aenean mi mauris, porta nec ante non, interdum pulvinar risus. Mauris gravida
+                    efficitur venenatis. Praesent quis porta ex. Sed rutrum risus id urna commodo,
+                    non ullamcorper tellus aliquet. Suspendisse lobortis sem malesuada.
+                </p>
+                <div class="signature">
+                    Eleanor Scott
+                </div>
+            </div>
+        </div>
+
+        <!-- Viền sóng ở dưới cùng của phần Experience -->
+        <div class="experience-bottom-wave">
+            <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#f8f9fa" fill-opacity="0.7"
+                    d="M0,192L80,181.3C160,171,320,149,480,165.3C640,181,800,235,960,240C1120,245,1280,203,1360,181.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
+                <path fill="#f1f3f5" fill-opacity="0.8"
+                    d="M0,96L80,117.3C160,139,320,181,480,181.3C640,181,800,139,960,122.7C1120,107,1280,117,1360,122.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
+                <path fill="#F5F6F7" fill-opacity="1"
+                    d="M0,224L80,213.3C160,203,320,181,480,144C640,107,800,53,960,48C1120,43,1280,85,1360,106.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Phẩn Latest Case Study -->
+    <section class="case-study-section">
+        <div class="case-study-container">
+            <h2>Latest Case Study</h2>
+
+            <!-- Card 1 -->
+            <div class="case-study-card">
+                <div class="card-content">
+                    <div class="card-icon" style="background-color: #ff6b4a;">
+<svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 15L20.25 5L39 15L20.25 25L1.5 15Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M29.625 37.5V20L20.25 15" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M34.625 17.3281V25.8594C34.6239 26.1249 34.5361 26.3827 34.375 26.5937C33.3281 28 28.8906 33.125 20.25 33.125C11.6094 33.125 7.17187 28 6.125 26.5937C5.9639 26.3827 5.87612 26.1249 5.875 25.8594V17.3281" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <div class="card-tags">WEBSITE / LMS / MOBILE APP</div>
+                    <h3>E-Tutor - Education Learning Management System</h3>
+                    <p>E-Tutor is an education, courses, and online (LMS) learning management system Figma template
+                        designed for people who want to start teaching online, create an LMS etc.</p>
+                    <a href="#" class="btn-link">View Case Study <span><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.71967 1.28033C7.42678 0.987437 7.42678 0.512563 7.71967 0.21967C8.01256 -0.0732233 8.48744 -0.0732233 8.78033 0.21967L12.7803 4.21967C13.0732 4.51256 13.0732 4.98744 12.7803 5.28033L8.78033 9.28033C8.48744 9.57322 8.01256 9.57322 7.71967 9.28033C7.42678 8.98744 7.42678 8.51256 7.71967 8.21967L10.4393 5.5H0.75C0.335787 5.5 0 5.16421 0 4.75C0 4.33579 0.335787 4 0.75 4H10.4393L7.71967 1.28033Z" fill="#00BBFF"/>
+</svg>
+</span></a>
+                </div>
+                <div class="card-images">
+                    <img src="./image/Project Image.png" alt="E-Tutor Mockup" class="mockup-img">
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="case-study-card">
+                <div class="card-content">
+                    <div class="card-icon" style="background-color: #1562e7;">
+                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.5 35H17.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.2187 3.09364C16.2499 5.46864 6.32804 14.9686 14.9999 29.9999H24.9999C33.4999 14.9686 23.7187 5.48426 20.7812 3.09364C20.562 2.91058 20.2855 2.8103 19.9999 2.8103C19.7143 2.8103 19.4378 2.91058 19.2187 3.09364Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.5469 17.4062L6.64061 23.2812C6.51701 23.4255 6.4298 23.5972 6.3863 23.7821C6.3428 23.967 6.34428 24.1596 6.39061 24.3438L8.31249 33.0469C8.35886 33.2537 8.4571 33.4454 8.59794 33.6039C8.73879 33.7623 8.91763 33.8824 9.11764 33.9527C9.31764 34.023 9.53225 34.0413 9.74127 34.0058C9.95029 33.9704 10.1469 33.8823 10.3125 33.75L15 30" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.3594 17.2812L33.3594 23.2813C33.483 23.4255 33.5702 23.5972 33.6137 23.7821C33.6572 23.967 33.6557 24.1596 33.6094 24.3438L31.6875 33.0469C31.6411 33.2537 31.5429 33.4454 31.402 33.6039C31.2612 33.7623 31.0824 33.8824 30.8824 33.9527C30.6823 34.023 30.4677 34.0413 30.2587 34.0058C30.0497 33.9704 29.8531 33.8823 29.6875 33.75L25 30" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 16.875C21.0355 16.875 21.875 16.0355 21.875 15C21.875 13.9645 21.0355 13.125 20 13.125C18.9645 13.125 18.125 13.9645 18.125 15C18.125 16.0355 18.9645 16.875 20 16.875Z" fill="white"/>
+</svg>
+
+
+                    </div>
+                    <div class="card-tags">DASHBOARD / DIGITAL PRODUCT</div>
+                    <h3>Raple - Analytics Admin Dashboard UI Kit</h3>
+                    <p>Jobpilot is a modern high-quality and well-organized job portal Laravel Script designed to
+                        connect people who are looking for suitable Jobs & Candidates.</p>
+                    <a href="#" class="btn-link">View Case Study <span><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.71967 1.28033C7.42678 0.987437 7.42678 0.512563 7.71967 0.21967C8.01256 -0.0732233 8.48744 -0.0732233 8.78033 0.21967L12.7803 4.21967C13.0732 4.51256 13.0732 4.98744 12.7803 5.28033L8.78033 9.28033C8.48744 9.57322 8.01256 9.57322 7.71967 9.28033C7.42678 8.98744 7.42678 8.51256 7.71967 8.21967L10.4393 5.5H0.75C0.335787 5.5 0 5.16421 0 4.75C0 4.33579 0.335787 4 0.75 4H10.4393L7.71967 1.28033Z" fill="#00BBFF"/>
+</svg>
+</span></a>
+                </div>
+                <div class="card-images">
+                    <img src="./image/project.png"
+                        alt="Dashboard Mockup" class="mockup-img">
+                </div>
+            </div>
+
+            <!-- View All -->
+            <div class="view-all">
+                I have more case studies? <a href="#">View All &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần Testimonial -->
+    <section class="testimonial-section">
+        <!-- Lớp sóng mờ phía trên -->
+        <div class="testimonial-top-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path fill="#F5F6F7" d="M0,0 C320,120 420,0 720,60 C1020,120 1120,0 1440,60 L1440,0 Z"></path>
+            </svg>
+        </div>
+
+        <div class="testimonial-container">
+            <div class="quote-icon">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1644_13085)">
+<path d="M25.8892 8.90525C27.2626 10.3639 27.9999 11.9999 27.9999 14.6519C27.9999 19.0289 25.118 22.9801 20.8294 25.1601C20.335 25.4114 19.7389 25.2282 19.4373 24.7628C19.0772 24.2071 19.2719 23.4659 19.8268 23.1047C23.0909 20.9797 23.9837 18.4566 24.3508 16.6647C24.3866 16.4899 24.2006 16.3503 24.0329 16.4113C23.3852 16.6469 22.6162 16.7222 21.8599 16.6519C19.4546 16.4293 17.5586 14.4546 17.5586 11.9999C17.5586 10.7622 18.0502 9.57526 18.9254 8.70009C19.8006 7.82492 20.9876 7.33325 22.2252 7.33325C23.6559 7.33325 25.0239 7.98659 25.8892 8.90525ZM12.5559 8.90525C13.9292 10.3639 14.6666 11.9999 14.6666 14.6519C14.6666 19.0289 11.7846 22.9801 7.49605 25.1601C7.00165 25.4114 6.40554 25.2282 6.10392 24.7628C5.74385 24.2071 5.93853 23.4659 6.49342 23.1047C9.75753 20.9797 10.6503 18.4566 11.0175 16.6647C11.0533 16.4899 10.8673 16.3503 10.6996 16.4113C10.0519 16.6469 9.2829 16.7222 8.52656 16.6519C6.12123 16.4293 4.22656 14.4546 4.22656 11.9999C4.22656 10.7622 4.71823 9.57526 5.5934 8.70009C6.46857 7.82492 7.65555 7.33325 8.89323 7.33325C10.3239 7.33325 11.6919 7.98659 12.5572 8.90525H12.5559Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_1644_13085">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+            </div>
+         <div class="testimonial-content">
+                <p class="quote-text">
+                    "Great Designer, does great work and is very flexible with change. if you're a programmer and are looking for UI/UX designer is definitely well qualified for the job."
+                </p>
+                <div class="author-info">
+                    <strong>JAMES QUINCEY</strong> <span>CEO of Google</span>
+                </div>
+         </div>
+            <div class="testimonial-nav">
+                <button class="nav-btn prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="nav-btn next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        
+        <!-- Lớp sóng mờ phía dưới -->
+        <div class="testimonial-bottom-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path fill="#F5F6F7" d="M0,120 C320,0 420,120 720,60 C1020,0 1120,120 1440,60 L1440,120 Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Phần Pricing Plans -->
+    <section class="pricing-section">
+        <div class="pricing-header">
+            <h2>Pricing Plans</h2>
+            <p>Nullam blandit molestie tortor, porta luctus ligula dignissim et. Sed pellentesque erat ac justo ultrices lacinia mauris eleifend.</p>
+        </div>
+        
+        <div class="pricing-cards">
+            <!-- Basic Plan -->
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <p class="plan-type">Part-Time - Freelance Work</p>
+                <div class="price">$1,200</div>
+                <hr>
+                <ul class="features">
+                    <li class="active"><i class="fa-solid fa-check"></i> User Research</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> Up to 10 Pages</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> Style Guide & Design System</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> User Interface Design</li>
+                    <li class="inactive"><i class="fa-solid fa-check"></i> Website Responsive</li>
+                    <li class="inactive"><i class="fa-solid fa-check"></i> Product Revision</li>
+                    <li class="inactive"><i class="fa-solid fa-check"></i> Special Requirements</li>
+                    <li class="inactive"><i class="fa-solid fa-check"></i> eCommerce Website</li>
+                </ul>
+                <a href="#" class="btn-pricing btn-outline">Let's Work Together &rarr;</a>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="pricing-card highlighted">
+                <h3>Standard</h3>
+                <p class="plan-type">Full Time - Project Base</p>
+                <div class="price highlight-price">$3,000</div>
+                <hr class="highlight-hr">
+                <ul class="features">
+                    <li class="active"><i class="fa-solid fa-check"></i> User Research</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> Up to 10 Pages</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> Style Guide & Design System</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> User Interface Design</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> Website Responsive</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> Product Revision</li>
+                    <li class="inactive"><i class="fa-solid fa-check"></i> Special Requirements</li>
+                    <li class="inactive"><i class="fa-solid fa-check"></i> eCommerce Website</li>
+                </ul>
+                <a href="#" class="btn-pricing btn-solid">Let's Work Together &rarr;</a>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <p class="plan-type">This is for long time hire</p>
+                <div class="price">$8,000</div>
+                <hr>
+                <ul class="features">
+                    <li class="active"><i class="fa-solid fa-check"></i> User Research</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> Up to 10 Pages</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> Style Guide & Design System</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> User Interface Design</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> Website Responsive</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> Product Revision</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> Special Requirements</li>
+                    <li class="active"><i class="fa-solid fa-check"></i> eCommerce Website</li>
+                </ul>
+                <a href="#" class="btn-pricing btn-outline">Let's Work Together &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Lớp sóng mờ phía dưới của Pricing -->
+        <div class="pricing-bottom-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path fill="#ffffff" d="M0,60 C320,120 420,0 720,60 C1020,120 1120,0 1440,60 L1440,120 L0,120 Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Phần Contact -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Cột trái -->
+            <div class="contact-left">
+                <h2>Enough Talk! Let's Work Together.</h2>
+                <p>Do you fancy saying hi to me or do you want to get started with your project and you need my help? Feel free to contact me.</p>
+                <a href="#" class="btn-solid btn-contact">Contact With Me &rarr;</a>
+            </div>
+
+            <!-- Cột phải -->
+            <div class="contact-right">
+                <div class="connect-socials">
+                    <h3>Let's Connect in...</h3>
+                    <div class="social-grid">
+                        <a href="#" class="social-btn"><i class="fa-brands fa-dribbble" style="color: #ea4c89;"></i> Dribbble</a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-behance" style="color: #1769ff;"></i> Behance</a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in" style="color: #0a66c2;"></i> Linkedin</a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-instagram" style="color: #E1306C;"></i> Instagram</a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-twitter" style="color: #1DA1F2;"></i> Twitter</a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-facebook" style="color: #1877F2;"></i> Facebook</a>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h3>My Contact Information</h3>
+                    <div class="info-card">
+                        <div class="info-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p class="info-label">Email Address</p>
+                            <p class="info-value">eleanor@info.com</p>
+                        </div>
+                        <div class="info-divider"></div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <p class="info-label">Phone Number</p>
+                            <p class="info-value">(406) 555-0120</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">E</div>
+            <nav class="footer-nav">
+                <a href="#">Home</a>
+                <a href="#">Works</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="footer-copy">
+                &copy; 2022 Eleanor Scott.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
